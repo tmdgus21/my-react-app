@@ -17,7 +17,8 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
         <a href="http://naver.com" target="_blank">
-          <img src={naverLogo} className="logo naver" alt="Naver logo" />
+          {/* <img src={naverLogo} className="logo naver" alt="Naver logo" /> */}
+          <button>naver</button> {/* 버튼 하이퍼링크 */}
         </a>
       </div>
       <h1>MY React Study</h1>
