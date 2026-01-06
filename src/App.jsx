@@ -18,7 +18,7 @@ function App() {
         </a>
         <a href="http://naver.com" target="_blank">
           {/* <img src={naverLogo} className="logo naver" alt="Naver logo" /> */}
-          <button>naver</button> {/* 버튼 하이퍼링크 */}
+          <button>naver</button> {/* 버튼 하이퍼링크 */} {/* new branch cod push */}
         </a>
       </div>
       <h1>MY React Study</h1>
