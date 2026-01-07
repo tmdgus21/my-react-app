@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./Login.css";
+import Header from "./Header";
 
 function Login() {
   const [id, setId] = useState("");
@@ -13,7 +14,7 @@ function Login() {
     }
     alert("Success Login");
   };//from의 기본 동작 = 페이지 새로고침(React에서는 새로고침 X)
-
+//alert : 웹의 기본적인 경고/알람 창
   return (
     <div className="login-container">
       <form className="login-form" onSubmit={handleLogin}>
