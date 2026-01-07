@@ -1,5 +1,6 @@
 .header {
   width: 100vw;           /* 화면 전체 가로 */
+  max-width: 100%; 
   display: flex;
   justify-content: space-between; /* 좌측 타이틀, 우측 네비 */
   align-items: center;
@@ -22,4 +23,17 @@
 
 .header-nav a:hover {
   text-decoration: underline;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  /* 배경 이미지 */
+  background-image: url('./assets/LoginBackgroundImage.jpeg'); /* 이미지 경로 */
+  background-size: cover;       /* 화면 전체 채움 */
+  background-position: center;  /* 가운데 정렬 */
+  background-repeat: no-repeat; /* 반복하지 않음 */
 }
