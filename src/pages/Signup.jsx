@@ -5,6 +5,7 @@ import "./Signup.css";
 function Signup() {
   const navigate = useNavigate();
 
+  const [username, setUsername] = useState("");
   const [id, setId] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
@@ -12,18 +13,18 @@ function Signup() {
   const handleSignup = (e) => {
     e.preventDefault();
 
-    if (!id || !password || !confirmPassword) {
-      alert("모든 항목을 입력하세요.");
+    if (!username ||!id || !password || !confirmPassword) {
+      alert("all input.");
       return;
     }
 
     if (password !== confirmPassword) {
-      alert("비밀번호가 일치하지 않습니다.");
+      alert("Not password.");
       return;
     }
 
     // 🔥 나중에 API 요청으로 바뀔 부분
-    alert("회원가입 성공!");
+    alert("Welcome!");
     navigate("/login");
   };
 
@@ -36,8 +37,8 @@ function Signup() {
           className="signup-input"
           type="text"
           placeholder="Name"
-          value={id}
-          onChange={(e) => setId(e.target.value)}
+          value={username}
+          onChange={(e) => setUsername(e.target.value)}
         />
 
         <input
