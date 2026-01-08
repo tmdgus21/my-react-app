@@ -1,0 +1,56 @@
+.home {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Header */
+.header {
+  width: 100%;
+  height: 60px;
+  background: #111;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding-left: 24px;
+  font-weight: bold;
+}
+
+/* Hero */
+.hero {
+  width: 100%;
+  height: 70vh;
+  background: linear-gradient(to right, #111, #333);
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 80px;
+}
+
+.hero h1 {
+  font-size: 56px;
+  margin: 0;
+}
+
+/* Content */
+.content {
+  padding: 60px 24px;
+}
+
+.card-list {
+  display: flex;
+  gap: 20px;
+  margin-top: 24px;
+}
+
+.card {
+  width: 240px;
+  height: 140px;
+  background: #eee;
+  border-radius: 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

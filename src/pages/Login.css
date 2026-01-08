@@ -2,8 +2,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100vw;
   height: 100vh;
   background-color: #ffffff;
+
+    /* 배경 이미지 */
+  background-image: url('../assets/LoginBackgroundImage.png'); /* 이미지 경로 */
+  background-size: cover;       /* 화면 전체 채움 */
+  background-position: center;  /* 가운데 정렬 */
+  background-repeat: no-repeat; /* 반복하지 않음 */
 }
 
 .login-form {
@@ -50,3 +57,17 @@
 .forgot-btn:hover {
   text-decoration: underline;
 }
+
+.signup-btn {
+  background: none;
+  border: none;
+  color: #1976d2;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.signup-btn:hover {
+  text-decoration: underline;
+}
+
+

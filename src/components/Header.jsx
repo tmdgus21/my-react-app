@@ -1,13 +1,14 @@
-import React from "react";
 import "./Header.css";
 
 function Header() {
   return (
     <header className="header">
-      <h2 className="header-title">MY React App Login</h2>
+      <div className="header-logo">Music Archive</div>
+
       <nav className="header-nav">
-          <a href="/login">로그인</a>
-          <a href="/signup">회원가입</a>
+        <a href="#">Home</a>
+        <a href="#">Archive</a>
+        <a href="#">About</a>
       </nav>
     </header>
   );
