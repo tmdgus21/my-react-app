@@ -12,3 +12,5 @@ const PrivateRoute = ({ children }) => {
 };
 
 export default PrivateRoute;
+//<Route path="/" element={<ProtectedRoute><Home /></ProtectedRoute>} />
+//사용할떄 App.jsx에 사용
