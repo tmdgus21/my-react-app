@@ -1,4 +1,5 @@
 // routes/PrivateRoute.jsx
+//페이지 볼 수 있는 권한을 줄떄
 import { Navigate } from "react-router-dom";
 
 const PrivateRoute = ({ children }) => {
