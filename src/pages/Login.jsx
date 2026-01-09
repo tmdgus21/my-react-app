@@ -15,9 +15,16 @@ function Login() {
       alert("Please input your ID and Password.");
       return;
     }
-      // 이메일 형식 체크
-    if(!emailRegex.test(id)) {
-      alert("Please enter a valid email address.");
+
+    //로그인 테스트 환경 코드 확인
+    const savedUser = JSON.parse(localStorage.getItem("user"));
+
+    if(!savedUser) {
+      alert("No registered user. Please sign up.");
+      return;
+    }
+    if( id != savedUser.email || password != savedUser.password) {
+      alert("Email or password is incorrect.");
       return;
     }
 

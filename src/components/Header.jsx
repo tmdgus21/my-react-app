@@ -14,6 +14,8 @@ function Header() {
 
   const handleLogout = () => {
     localStorage.removeItem("isLogin"); // 로그인 상태 제거
+    localStorage.removeItem("user");    // 테스트용 저장된 유저 아이템 삭제
+
     alert("did logout.");
     setIsLogin(false);
     navigate("/"); // home 페이지로 이동
@@ -25,7 +27,7 @@ function Header() {
 
       <nav className="header-nav">
         <a href="/">Home</a>
-        <a href="#">Archive</a>
+        <a href="/test">Archive</a>
         <a href="#">About</a>
 
         {isLogin ? (

@@ -5,6 +5,7 @@ import Login from "./pages/Login";
 import Signup from './pages/Signup';
 import CardClickPage from "./pages/CardClickPage";
 import PrivateRoute from "./routes/PrivateRoute";
+import Test from "./pages/Test";
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
+        <Route path="/test" element={<Test />} />
         <Route
           path="/card-detail/:title/:artist"
           element={

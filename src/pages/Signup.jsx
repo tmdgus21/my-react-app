@@ -10,6 +10,11 @@ function Signup() {
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const emailRegex = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
+  const user = {
+  username,
+  email: id,
+  password,
+};
   const handleSignup = (e) => {
     e.preventDefault();
 
@@ -34,6 +39,8 @@ function Signup() {
     }
 
     // 🔥 나중에 API 요청으로 바뀔 부분
+    localStorage.setItem("user", JSON.stringify(user)); //유저 테스트 용
+
     alert("Welcome!");
     navigate("/login");
   };
@@ -89,6 +96,7 @@ function Signup() {
       </form>
     </div>
   );
+  
 }
 
 export default Signup;
