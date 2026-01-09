@@ -8,13 +8,19 @@ function Login() {
   const [id, setId] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
-
+  const emailRegex = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
   const handleLogin = (e) => {
     e.preventDefault();
     if (!id || !password) {
       alert("Please input your ID and Password.");
       return;
     }
+      // 이메일 형식 체크
+    if(!emailRegex.test(id)) {
+      alert("Please enter a valid email address.");
+      return;
+    }
+
     localStorage.setItem("isLogin", "true"); // 로그인 상태 저장
     alert("Success Login");
     navigate("/"); // Home으로 이동
@@ -27,8 +33,8 @@ function Login() {
 
         <input
           className="login-input"
-          type="text"
-          placeholder="ID"
+          type="email"
+          placeholder="Email"
           value={id}
           onChange={(e) => setId(e.target.value)}
         />

@@ -9,7 +9,7 @@ function Signup() {
   const [id, setId] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
-
+  const emailRegex = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
   const handleSignup = (e) => {
     e.preventDefault();
 
@@ -18,8 +18,18 @@ function Signup() {
       return;
     }
 
+    if(!emailRegex.test(id)) {
+      alert("Please enter a valid email address.");
+      return;
+    }
+    
+    if (password.length < 8) {
+      alert("Password must be at least 8 characters.");
+      return;
+    } 
+
     if (password !== confirmPassword) {
-      alert("Not password.");
+      alert("password do not match.");
       return;
     }
 
@@ -43,8 +53,8 @@ function Signup() {
 
         <input
           className="signup-input"
-          type="text"
-          placeholder="ID"
+          type="email"
+          placeholder="Email"
           value={id}
           onChange={(e) => setId(e.target.value)}
         />
