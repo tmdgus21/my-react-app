@@ -2,9 +2,6 @@ import "./Home.css";
 import Card from "../components/Card.jsx";
 import HeroBanner from "../components/HeroBanner.jsx"
 import Header from "../components/Header.jsx"
-import img1 from "../assets/image1.png";
-import img2 from "../assets/image2.png";
-import img3 from "../assets/image3.png";
 
 function Home() {
   return (
@@ -14,7 +11,7 @@ function Home() {
         
       {/* 최근 노래 */}
       <section className="section">
-        <h2>최근 추가된 노래</h2>
+        <h2>Recently added songs</h2>
         <div className="card-row">
           <Card
             image="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4"
@@ -31,7 +28,7 @@ function Home() {
 
       {/* 아카이브 */}
       <section className="section">
-        <h2>아카이브</h2>
+        <h2>Archive</h2>
         <div className="card-grid">
           <Card
             image="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f"
