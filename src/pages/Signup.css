@@ -35,15 +35,17 @@
 }
 
 .signup-btn {
-  padding: none;
+  padding: 10px;
   color: #1976d2;
+  font-size: 18px;
   border: none;
   cursor: pointer;
   margin-bottom: 10px;
 }
 
 .signup-btn:hover {
-  background-color: #155fa0;
+  background-color: #03f9d0;
+  padding: 10px
 }
 
 .login-link {
